@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D第一人称乒乓球</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="score">得分: <span id="playerScore">0</span></div>
+        <div id="gameStartScreen">
+            <h1>3D第一人称乒乓球</h1>
+            <button id="startButton">开始游戏</button>
+            <p>使用鼠标移动拍子，点击鼠标击球</p>
+        </div>
+        <div id="gameOverScreen" class="hidden">
+            <h1>游戏结束</h1>
+            <p>最终得分: <span id="finalScore">0</span></p>
+            <button id="restartButton">重新开始</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/PointerLockControls.js"></script>
+    <script src="game.js"></script>
+</body>
+</html> 
